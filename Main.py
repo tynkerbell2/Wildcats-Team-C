@@ -1,13 +1,3 @@
-# ------------------------------------------
-# 
-# 	Project:      Coriolanus Snow
-#	Author:       Schilliam
-#	Created:      9/21/24
-#   Last Updated: 9/21/24
-#	Description:  Coriolanus Snow's Code
-# 
-# ------------------------------------------
-
 # Library imports
 from vex import *\
 
@@ -35,14 +25,11 @@ def take_in():
 taking_in = False;
 
 while (True):
-    if(!taking_in):
+    if(taking_in):
         controller_1.buttonR2.pressed(take_in)
     else:
         controller_1.buttonR2.pressed(motor_lock)
     
-if 
 
 def motor_lock():
-    Intake.stop()
-
-
+    Intake.set_stopping(HOLD)
